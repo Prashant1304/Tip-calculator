@@ -48,20 +48,20 @@ import "./mainpage.css"
   render() {
 
       return(
-        <div>
+        <div className="tip-main">
           <div>
             <p>How Much is your bill</p> 
-            <a className="tip-rupee">&#x20B9;</a><input style={{width:"462px"}} type="number" onChange={this.handleChange} value={this.state.value1} ></input>
+            <a className="tip-rupee">&#x20B9;</a><input className="tip-input"  type="number" onChange={this.handleChange} value={this.state.value1} ></input>
           </div>
 
           <div>
             <p>How many people sharing the bill</p>
-            <a>&#x26F9;</a><input type="number" style={{width:"462px"}} onChange={this.handleChange1} value={this.state.value2} ></input>
+            <a>&#x26F9;</a><input className="tip-input" type="number"  onChange={this.handleChange1} value={this.state.value2} ></input>
           </div>
 
           <div>
             <p>How much percent</p>
-            <select onChange={this.dropDownValue} style={{width:"462px"}}>
+            <select onChange={this.dropDownValue}  >
               <option>Choose</option>
               <option value="10">10%</option>
               <option value="20">20%</option>
@@ -71,7 +71,7 @@ import "./mainpage.css"
 
           <div>
             <button onClick={this.calculate} >calculate</button>
-            <input type="reset" onClick={this.reset}></input>
+            <input  type="reset" onClick={this.reset}></input>
             <p>Each will contribute  { Math.floor( this.state.final)} rupee</p>
           </div>
 

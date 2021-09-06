@@ -1,3 +1,20 @@
-.tip-rupee{
+.tip-rupee {
     color: green;
 }
+
+.tip-main {
+    text-align-last: center;
+    background-color: darkgrey;
+    height: 87vh;
+}
+
+
+.tip-input {
+    width: 480px;
+}
+
+@media screen and (max-width: 600px) {
+   .tip-input {
+      width:400px
+    }
+  }
